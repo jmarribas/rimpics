@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="es"><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="author" content="Jonathan Muñoz Arribas">
+  <meta name="Description" content="Servicios de fotografía y vídeo">
+  <meta name="keywords" content="fotografía, vídeo, edición, fotoperiodismo, portfolio">
+  
+  <title>Rimpics</title>
+<link rel="stylesheet" href="Rimpics_files/style.css"><link rel="shortcut icon" href="http://127.0.0.1:5500/favicon.png" type="image/x-icon"></head>
+
+<body>
+  <nav>
+    <div>
+      <img src="Rimpics_files/logo_rimpics.png" alt="Logo">
+    </div>
+    <ul>
+      <li><a href="http://127.0.0.1:5500/intex.html">Inicio</a></li>
+      <li><a href="#">Blog</a></li>
+      <li><a href="#">Fotografía</a></li>
+      <li><a href="#productions">Producciones</a></li>
+      <li><a href="#aboutMe">Sobre mi</a></li>
+      <li><a href="#contact">Contacto</a></li>
+    </ul>
+  </nav>
+  <header>
+    <div>
+      <h1>RIMPICS</h1>
+      <h2>Servicios de fotografía y vídeo</h2>
+      <p>“El componente más importante de una cámara está detrás de ella”. <cite>Ansel Adams</cite></p>
+    </div>
+    
+  </header>
+  <main>
+    <section class="cards" id="productions">
+      <article class="phSocial">
+        <h3>Fotografía Social</h3>
+      </article>
+      <article class="phLandscape">
+        <h3>Fotografía de Paisajes</h3>
+      </article>
+      <article class="phMacro">
+        <h3>Fotografía Macro</h3>
+      </article>
+      <article class="phVideo">
+        <h3>Producciones de Vídeo</h3>
+      </article>
+    </section>
+
+    <section class="aboutMe" id="aboutMe">
+      <h3>Sobre mi...</h3>
+      <p>Lo primero, si te estas molestando en leer esto, es agradecerte que estés dedicado tu tiempo en interesarte en
+        lo que hago, dicho ésto, me presento, me llamo Richard Muñoz y actualmente estoy iniciándome en el mundo de la
+        fotografía y vídeo, es algo que siempre me había gustado pero a lo que no le había dedicado el tiempo que se
+        merecía. Ahora es el momento, lo he tomado con ganas, y espero ir poco a poco plasmando mis pequeñas visiones de
+        la vida que voy tomando desde mi cámara Nikon, a la que cada vez la tengo mas cariño y la que comienza a ser una
+        compañera inseparable.
+      </p><p>La fotografía es un arte, es mucho más que tirar una foto, y como cualquier arte, lo complicado es expresar y
+        transmitir emociones, y cómo con una imagen puedes contar una historia, y a mi en este sentido me queda un mundo
+        por aprender, se lo que me digo, porque soy músico (bajista y contrabajista) desde hace ya 20 años, y cada día
+        que pasa aprendes cosas nuevas, tanto por ti mismo como de la gente que te rodea, debes dedicarle mucho tiempo.
+      </p>
+      <p>Mi objetivo con este blog, es el de ir exponiendo las fotografías que voy tomando, y el reflejar todo lo
+        relacionado con este mundo de la imagen, ir evolucionando y aprendiendo, tanto de tí como lector puedas opinar,
+        como con lo que voy aprendiendo en cursos y del día a día. Espero ir sumando subscriptores porque eso sería
+        señal de que gusta lo que hago (con solo gustar me daría por satisfecho).</p>
+      <div class="imgAboutMe"><img src="Rimpics_files/aboutme.jpg" alt="Acerca de mi" width="100%"></div>
+    </section>
+
+    <section class="contact" id="contact">
+      <div>
+        <h3>Conctacto</h3>
+        <p>Puedes contactarme rellenando el siguiente formulario:</p>
+        <form action="#" method="post" class="contactForm">
+          <ul>
+            <li>
+              <label for="name">Nombre</label>
+              <input type="text" id="name" placeholder="Escribe tu nombre">
+            </li>
+            <li>
+              <label for="email">Email</label>
+              <input type="email" id="email" placeholder="Tu email">
+            </li>
+            <li>
+              <label for="coment">Comentario</label>
+              <textarea name="coment" id="coment" cols="30" rows="5" placeholder="Escribe aquí tu comentario"></textarea>
+            </li>
+            <input type="submit" value="Enviar">
+          </ul>
+        </form>
+      </div>
+    </section>
+  </main>
+  <footer>
+    <div>
+      <a href="https://www.facebook.com/rimpics/" target="_blank"><img src="Rimpics_files/facebookico.png" alt="facebook"></a>
+      <a href="https://www.instagram.com/_rimpics_/" target="_blank"><img src="Rimpics_files/instagramico.png" alt="instagram"></a>
+    </div>
+    <p>© rimpics.com</p>
+    <div>
+      <a href="mailto: info@rimpics.com">info@rimpics.com</a>
+    </div>
+  </footer>
+
+<!-- Code injected by live-server -->
+<script>
+	// <![CDATA[  <-- For SVG support
+	if ('WebSocket' in window) {
+		(function () {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i < sheets.length; ++i) {
+					var elem = sheets[i];
+					var parent = elem.parentElement || head;
+					parent.removeChild(elem);
+					var rel = elem.rel;
+					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+					parent.appendChild(elem);
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+			var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function (msg) {
+				if (msg.data == 'reload') window.location.reload();
+				else if (msg.data == 'refreshcss') refreshCSS();
+			};
+			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+				console.log('Live reload enabled.');
+				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+			}
+		})();
+	}
+	else {
+		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+	}
+	// ]]>
+</script>
+
+
+</body></html>
